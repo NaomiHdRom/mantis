@@ -1,0 +1,2 @@
+source;share/hexapod_mantis/environment/ament_prefix_path.sh
+source;share/hexapod_mantis/environment/path.sh

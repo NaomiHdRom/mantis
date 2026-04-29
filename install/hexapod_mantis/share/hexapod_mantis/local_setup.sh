@@ -1,0 +1,1 @@
+/home/naomi/ROS2Dev/mantis/build/hexapod_mantis/ament_cmake_environment_hooks/local_setup.sh
