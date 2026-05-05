@@ -5,5 +5,5 @@ sceneTreePerspectives: 000000ff0000000100000003000000c0000000a800000000010000000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "../../../mantis/src/hexapod_mantis/controllers/mantis/mantis.c"
+textFiles: 0 "controllers/mantis/mantis.c"
 consoles: Console:All:All

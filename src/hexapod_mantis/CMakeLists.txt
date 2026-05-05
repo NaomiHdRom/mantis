@@ -30,6 +30,7 @@ install(DIRECTORY
   controllers
   launch
   models
+  protos
   rviz
   urdf
   worlds
