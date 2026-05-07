@@ -44,10 +44,13 @@
 -- Install configuration: ""
 -- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers
 -- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/Makefile
--- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis
--- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/mantis.c
--- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/Makefile
--- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/.gitignore
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/mantis_hex.c
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/Makefile
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/.gitignore
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis_hex
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis_hex/__init__.py
+-- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis_hex/mantis_hex.py
 -- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/launch
 -- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/launch/webots_mantis.launch.xml
 -- Installing: /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/models

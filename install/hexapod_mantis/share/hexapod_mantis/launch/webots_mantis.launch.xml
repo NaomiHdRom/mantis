@@ -13,6 +13,8 @@
     <env name="DISPLAY" value="$(env DISPLAY :0)" />
   </executable>
 
+
+
   <!-- =============== robot_state_publisher =============== -->
   <!-- TODO: agregar urdf -->
   <!-- <node pkg="robot_state_publisher" exec="robot_state_publisher">

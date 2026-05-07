@@ -1,7 +1,13 @@
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/Makefile
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/mantis_hex.c
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/Makefile
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/.gitignore
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/mantis.c
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/Makefile
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/mantis.py
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/.gitignore
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis_hex/__init__.py
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis_hex/mantis_hex.py
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/launch/webots_mantis.launch.xml
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/backgrounds/SandyGround.proto
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/backgrounds/textures/sandy_ground/sandy_ground_normal.jpg
