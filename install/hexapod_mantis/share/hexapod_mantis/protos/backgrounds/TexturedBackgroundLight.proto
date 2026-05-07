@@ -1,9 +1,1 @@
-#VRML_SIM R2025a utf8
-PROTO TexturedBackgroundLight [
-]
-{
-  DirectionalLight {
-    direction -0.5 -1 -0.3
-    intensity 1
-  }
-}
+/home/naomi/ROS2Dev/mantis/src/hexapod_mantis/protos/backgrounds/TexturedBackgroundLight.proto

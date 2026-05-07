@@ -1,2 +1,1 @@
-source;share/hexapod_mantis/environment/ament_prefix_path.sh
-source;share/hexapod_mantis/environment/path.sh
+/home/naomi/ROS2Dev/mantis/build/hexapod_mantis/ament_cmake_environment_hooks/local_setup.dsv
