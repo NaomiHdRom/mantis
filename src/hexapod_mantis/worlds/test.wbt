@@ -25,7 +25,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.2749171918906461 0.068833741502657 0.9590007578900587 2.420159078333073
-  position 0.5135264697393302 0.012696537177121964 61.315810788321954
+  position 1.0845851424162551 -0.541485261063679 61.78396230938759
   follow "robot"
 }
 TexturedBackground {
@@ -90,6 +90,7 @@ Robot {
             ]
             endPoint Solid {
               translation 0.078 -0.002 -0.001
+              rotation 0 1 0 0
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {
@@ -107,6 +108,7 @@ Robot {
                   ]
                   endPoint Solid {
                     translation 0.172 -0.008 0.003
+                    rotation 0 1 0 0
                     children [
                       DEF link_1C_visual Pose {
                         children [
@@ -171,6 +173,144 @@ Robot {
           }
         ]
         boundingObject DEF link_1A_collision Pose {
+          children [
+            Mesh {
+              url [
+                "../models/A_collider.dae"
+              ]
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.3
+          centerOfMass [
+            0.04 0 0
+          ]
+          inertiaMatrix [
+            1 1 1
+            0 0 0
+          ]
+        }
+      }
+    }
+    DEF link_2A HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0.109 -0.062 0.03
+      }
+      device [
+        DEF joint_2A RotationalMotor {
+          name "joint_2A"
+          sound ""
+        }
+        DEF joint_2A_sensor PositionSensor {
+          name "joint_2A_sensor"
+        }
+      ]
+      endPoint DEF link_2A Solid {
+        translation 0.109 -0.062 0.03
+        rotation 0 0 1 -0.523
+        children [
+          DEF link_2B HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor 0.078 -0.002 -0.001
+            }
+            device [
+              DEF joint_2B RotationalMotor {
+                name "joint_2B"
+                sound ""
+              }
+              DEF joint_2B_sensor PositionSensor {
+                name "joint_2B_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation 0.078 -0.002 -0.001
+              rotation 0 1 0 0
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 1 0
+                    anchor 0.172 -0.008 0.003
+                  }
+                  device [
+                    DEF joint_1C_sensor PositionSensor {
+                      name "joint_2C_sensor"
+                    }
+                    DEF joint_1C RotationalMotor {
+                      name "joint_2C"
+                      sound ""
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.172 -0.008 0.003
+                    rotation 0 1 0 0
+                    children [
+                      DEF link_2C_visual Pose {
+                        children [
+                          CadShape {
+                            url [
+                              "../models/C.dae"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                    boundingObject DEF link_2C_collision Mesh {
+                      url [
+                        "../models/C_collider.dae"
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 1
+                      centerOfMass [
+                        0 0 0
+                      ]
+                      inertiaMatrix [
+                        1 1 1
+                        0 0 0
+                      ]
+                    }
+                  }
+                }
+                DEF link_2B_visual Pose {
+                  children [
+                    CadShape {
+                      url [
+                        "../models/B.dae"
+                      ]
+                    }
+                  ]
+                }
+              ]
+              boundingObject DEF link_2B_collision Mesh {
+                url [
+                  "../models/B_collider.dae"
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 1
+                centerOfMass [
+                  0.15 -0.01 0
+                ]
+              }
+            }
+          }
+          DEF link_2A_visual Pose {
+            children [
+              CadShape {
+                url [
+                  "../models/A.dae"
+                ]
+              }
+            ]
+          }
+        ]
+        boundingObject DEF link_2A_collision Pose {
           children [
             Mesh {
               url [
