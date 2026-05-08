@@ -5,7 +5,7 @@
 
 
   <!-- ================= Launch Webots ================= -->
-  <let name="world_path" value="$(var package_share)/worlds/mantis.wbt" />
+  <let name="world_path" value="$(var package_share)/worlds/mantis1.wbt" />
   <let name="controllers_path" value="$(var package_share)/controllers" />
 
   <executable cmd="webots --mode=realtime $(var world_path)" output="screen">

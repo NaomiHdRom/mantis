@@ -42,9 +42,10 @@
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/textures/tibia_roughness.jpg
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/dyna_hexa.urdf
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/dynamixel_hexapod.urdf
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/.mantis.jpg
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/.mantis.wbproj
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis copy.wbt
-/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis.wbt
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis1.wbt
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/ament_index/resource_index/package_run_dependencies/hexapod_mantis
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/ament_index/resource_index/parent_prefix_path/hexapod_mantis
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/environment/ament_prefix_path.sh
