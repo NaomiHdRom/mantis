@@ -922,6 +922,7 @@ Robot {
       0 0 0
     ]
   }
+  controller "hexapod"
 }
 Mantis {
   translation 6.15 24.12 61.42

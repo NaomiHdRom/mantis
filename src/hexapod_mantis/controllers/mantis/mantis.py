@@ -1,78 +1,87 @@
 # mantis.py
-# Python controller for your Hexapod in Webots
+# Python controller for the Mantis hexapod in Webots
+# Equivalent to the original C controller
 
 from controller import Robot
 import math
 
 def main():
     robot = Robot()
+
     time_step = int(robot.getBasicTimeStep())
 
-    # === Motores reales definidos en tu .wbt ===
+    # Meaning of the motor characters:
+    # R / L : Right / Left
+    # A / M / P : Front / Middle / Rear
+    # C / F / T : Base / Shoulder / Knee
     motor_names = [
-        "joint_1A", "joint_1B", "joint_1C",
-        "joint_2A", "joint_2B", "joint_2C",
-        "joint_3A", "joint_3B", "joint_3C",
-        "joint_4A", "joint_4B", "joint_4C",
-        "joint_5A", "joint_5B", "joint_5C",
-        "joint_6A", "joint_6B", "joint_6C"
+        "RPC", "RPF", "RPT",
+        "RMC", "RMF", "RMT",
+        "RAC", "RAF", "RAT",
+        "LPC", "LPF", "LPT",
+        "LMC", "LMF", "LMT",
+        "LAC", "LAF", "LAT"
     ]
 
+    # Get motors
     motors = []
     for name in motor_names:
         motor = robot.getDevice(name)
-        motor.setPosition(0.0)  # modo posición
+        motor.setPosition(0.0)   # Position control mode
         motors.append(motor)
 
-    # === Parámetros de marcha ===
-    f = 0.5  # frecuencia [Hz]
+    # Gait parameters (same as C controller)
+
+    # frequency [Hz]
+    f = 0.5
 
     # amplitudes [rad]
-    aA = 0.25   # coxa (rotación horizontal)
-    aB = 0.20   # femur
-    aC = 0.05   # tibia
-
+    aC = 0.25   # Base
+    aF = 0.20   # Shoulder
+    aT = 0.05   # Knee
     a = [
-         aA,  aB, -aC,
-        -aA, -aB,  aC,
-         aA,  aB, -aC,
-         aA, -aB,  aC,
-        -aA,  aB, -aC,
-         aA, -aB,  aC
+         aC,  aF, -aT,
+        -aC, -aF,  aT,
+         aC,  aF, -aT,
+         aC, -aF,  aT,
+        -aC,  aF, -aT,
+         aC, -aF,  aT
     ]
 
-    # fases
+    # phases [s]
+    pC = 0.0
+    pF = 2.0
+    pT = 2.5
     p = [
-        0.0, 2.0, 2.5,
-        0.0, 2.0, 2.5,
-        0.0, 2.0, 2.5,
-        0.0, 2.0, 2.5,
-        0.0, 2.0, 2.5,
-        0.0, 2.0, 2.5
+        pC, pF, pT,
+        pC, pF, pT,
+        pC, pF, pT,
+        pC, pF, pT,
+        pC, pF, pT,
+        pC, pF, pT
     ]
 
-    # offsets (postura base)
-    dA = 0.6
-    dB = 0.8
-    dC = -2.4
-
+    # offsets [rad]
+    dC = 0.6
+    dF = 0.8
+    dT = -2.4
     d = [
-        -dA,  dB,  dC,
-         0.0, dB,  dC,
-         dA,  dB,  dC,
-         dA,  dB,  dC,
-         0.0, dB,  dC,
-        -dA,  dB,  dC
+        -dC,  dF,  dT,
+         0.0, dF,  dT,
+         dC,  dF,  dT,
+         dC,  dF,  dT,
+         0.0, dF,  dT,
+        -dC,  dF,  dT
     ]
 
-    print("✅ Hexapod controller running")
+    print("✅ Mantis Python controller running")
 
     while robot.step(time_step) != -1:
         t = robot.getTime()
 
         for i in range(18):
-            pos = a[i] * math.sin(2.0 * math.pi * f * t + p[i]) + d[i]
-            motors[i].setPosition(pos)
+            position = a[i] * math.sin(2.0 * math.pi * f * t + p[i]) + d[i]
+            motors[i].setPosition(position)
 
 if __name__ == "__main__":
     main()
