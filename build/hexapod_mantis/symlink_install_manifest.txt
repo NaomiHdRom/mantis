@@ -49,7 +49,6 @@
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis copy.wbt
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis1.wbt
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/mantis2.wbt
-/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/test copy.wbt
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/test.wbt
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/ament_index/resource_index/package_run_dependencies/hexapod_mantis
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/ament_index/resource_index/parent_prefix_path/hexapod_mantis

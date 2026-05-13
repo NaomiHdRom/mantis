@@ -13,7 +13,6 @@ WorldInfo {
   ]
   title "Mantis Hexapod"
   ERP 0.62
-  basicTimeStep 10
   contactProperties [
     ContactProperties {
       coulombFriction [
@@ -25,7 +24,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.2749171918906461 0.068833741502657 0.9590007578900587 2.420159078333073
-  position 0.4426181368573836 -0.5834671719108386 61.53897238711753
+  position 0.3842138534312925 -0.5267889488793756 61.49109279885302
   follow "robot"
 }
 TexturedBackground {
@@ -88,7 +87,7 @@ Robot {
                 name "joint_1B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_1B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -106,7 +105,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_1C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -120,6 +119,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_1C"
                     boundingObject DEF link_1C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -148,6 +148,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_1B"
               boundingObject DEF link_1B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -172,6 +173,7 @@ Robot {
             ]
           }
         ]
+        name "link_1A"
         boundingObject DEF link_1A_collision Pose {
           children [
             Mesh {
@@ -226,7 +228,7 @@ Robot {
                 name "joint_2B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_2B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -244,7 +246,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_2C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -258,6 +260,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_2C"
                     boundingObject DEF link_2C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -286,6 +289,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_2B"
               boundingObject DEF link_2B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -310,6 +314,7 @@ Robot {
             ]
           }
         ]
+        name "link_2A"
         boundingObject DEF link_2A_collision Pose {
           children [
             Mesh {
@@ -364,7 +369,7 @@ Robot {
                 name "joint_3B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_3B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -382,7 +387,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_3C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -396,6 +401,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_3C"
                     boundingObject DEF link_3C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -424,6 +430,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_3B"
               boundingObject DEF link_3B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -448,6 +455,7 @@ Robot {
             ]
           }
         ]
+        name "link_3A"
         boundingObject DEF link_3A_collision Pose {
           children [
             Mesh {
@@ -502,7 +510,7 @@ Robot {
                 name "joint_4B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_4B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -520,7 +528,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_4C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -534,6 +542,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_4C"
                     boundingObject DEF link_4C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -562,6 +571,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_4B"
               boundingObject DEF link_4B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -586,6 +596,7 @@ Robot {
             ]
           }
         ]
+        name "link_4A"
         boundingObject DEF link_4A_collision Pose {
           children [
             Mesh {
@@ -624,7 +635,7 @@ Robot {
       ]
       endPoint DEF link_5A Solid {
         translation -0.109 0.062 0.03
-        rotation 0 0 -1 -2.618185307179586
+        rotation 0 0 1 2.618185307179586
         children [
           DEF link_5B HingeJoint {
             jointParameters HingeJointParameters {
@@ -640,7 +651,7 @@ Robot {
                 name "joint_5B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_5B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -658,7 +669,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_5C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -672,6 +683,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_5C"
                     boundingObject DEF link_5C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -700,6 +712,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_5B"
               boundingObject DEF link_5B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -724,6 +737,7 @@ Robot {
             ]
           }
         ]
+        name "link_5A"
         boundingObject DEF link_5A_collision Pose {
           children [
             Mesh {
@@ -762,7 +776,7 @@ Robot {
       ]
       endPoint DEF link_6A Solid {
         translation 0 0.125 0.03
-        rotation 0 0 -1 -1.5708
+        rotation 0 0 1 1.5708
         children [
           DEF link_6B HingeJoint {
             jointParameters HingeJointParameters {
@@ -778,7 +792,7 @@ Robot {
                 name "joint_6B_sensor"
               }
             ]
-            endPoint Solid {
+            endPoint DEF link_6B Solid {
               translation 0.078 -0.002 -0.001
               rotation 0 1 0 0
               children [
@@ -796,7 +810,7 @@ Robot {
                       sound ""
                     }
                   ]
-                  endPoint Solid {
+                  endPoint DEF link_6C Solid {
                     translation 0.172 -0.008 0.003
                     rotation 0 1 0 0
                     children [
@@ -810,6 +824,7 @@ Robot {
                         ]
                       }
                     ]
+                    name "link_6C"
                     boundingObject DEF link_6C_collision Mesh {
                       url [
                         "../models/C_collider.dae"
@@ -838,6 +853,7 @@ Robot {
                   ]
                 }
               ]
+              name "link_6B"
               boundingObject DEF link_6B_collision Mesh {
                 url [
                   "../models/B_collider.dae"
@@ -862,6 +878,7 @@ Robot {
             ]
           }
         ]
+        name "link_6A"
         boundingObject DEF link_6A_collision Pose {
           children [
             Mesh {
