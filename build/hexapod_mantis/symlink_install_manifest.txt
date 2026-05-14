@@ -7,6 +7,7 @@
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/mantis/mantis.py
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/Makefile
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/controllers/respaldo/mantis_hex.c
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/launch/view_dyna_hexa.launch.xml
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/launch/webots_mantis.launch.xml
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/models/A.dae
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/models/A_collider.dae
@@ -40,6 +41,9 @@
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/textures/tibia_normal.jpg
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/textures/tibia_occlusion.jpg
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/protos/textures/tibia_roughness.jpg
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/rviz/dyna_hexa_view.rviz
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/.ipynb_checkpoints/dyna_hexa-checkpoint.urdf
+/home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/.ipynb_checkpoints/dynamixel_hexapod-checkpoint.urdf
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/dyna_hexa.urdf
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/urdf/dynamixel_hexapod.urdf
 /home/naomi/ROS2Dev/mantis/install/hexapod_mantis/share/hexapod_mantis/worlds/.mantis.jpg
